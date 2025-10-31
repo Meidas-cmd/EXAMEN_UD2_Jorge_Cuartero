@@ -30,14 +30,9 @@ public class PagaBronca {
                     num_bronca = num_bronca * 10;
                     total_bronca = total_bronca+num_bronca;
                     break;
-                case "padre":
+                case "padre","madre":
                     num_bronca = num_bronca * 100;
                     total_bronca = total_bronca+num_bronca;
-                    break;
-                case "madre":
-                    num_bronca = num_bronca * 100;
-                    total_bronca = total_bronca+num_bronca;
-
                     break;
                 case "monitor":
                     num_bronca = num_bronca * 5;
@@ -77,7 +72,6 @@ public class PagaBronca {
             } else {
                 System.out.println("Esta semana te libras");
             }
-
         }
     }
 }
