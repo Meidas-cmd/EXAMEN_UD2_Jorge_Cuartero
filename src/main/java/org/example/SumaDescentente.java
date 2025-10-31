@@ -17,7 +17,12 @@ public class SumaDescentente {
         int num_tamanyo = num_ale_string.length();
         for (int i = 0; i<=num_tamanyo-1;i++){
             num_des = num_ale_string.substring(i);
-            frase += num_des + " + ";
+            if (i==num_tamanyo-1){
+                frase += num_des;
+
+            }else {
+                frase += num_des + " + ";
+            }
             conver = Integer.parseInt(num_des);
             total = total+conver;
         }
