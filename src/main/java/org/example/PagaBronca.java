@@ -59,15 +59,13 @@ public class PagaBronca {
             if (seguir.toLowerCase().equals("n")){
                 estado = true;
             }
-
-
         }
         if (total_bronca != 0){
             System.out.println("Resultados semanales:");
             System.out.println("Total de la bronca = " + total_bronca);
             if (total_bronca >= 100000){
                 System.out.println("Esta semana sin paga");
-            }else if (total_bronca >= 50000){
+            }else if (total_bronca >= 10000){
                 System.out.println("Esta semana media paga");
             } else {
                 System.out.println("Esta semana te libras");
